@@ -382,5 +382,20 @@ body{
     .section-1-side-icon i, .section-1-side-icon-2 i{
         display:none;
     }
+    .section-1-header-button{
+        display:grid;
+        grid-template-columns:repeat(2,2fr);
+        width:90%;
+    }
+    .section-1-image-and-text-container{
+        flex-direction:column;
+        margin:5rem auto;
+        gap:2rem;
+        justify-content:center;
+        align-items:center;
+    }
+    .section-1-image-1{
+        width:auto;
+    }
 }
 /* responsive design mobile approaches end */
