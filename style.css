@@ -328,6 +328,7 @@ body{
 /* section 2 start  */
 .section-2-container{
     max-width:950px;
+    height:max-content;
     display:flex;
     justify-content:space-between;
     align-items:start;
@@ -363,73 +364,62 @@ body{
     background-color:transparent;
     border:1px solid #356DF6;
 }
-.section-2-image-1{
-    width:13rem;
-    height:41vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.60),rgba(0, 0, 0, 0.70)) , url("images/norway.png");
-    background-repeat:no-repeat;
-    background-size:100%;
-    background-position:center center;
-    background-color:#272b41;
-    border-radius:1rem;
-    border:10px solid #272b41;
+.section-2-image-container{
+    display:flex;
+}
+.section-2-image-1 img{
+    width:10rem;
+    border:.5rem solid #5e63797e; 
+    filter:brightness(50%);
+    border-radius:.8rem;
+    z-index:6;
     position:relative;
-    right:10rem;
-    z-index:2;
+    top:10rem;
+    left:3rem;
 }
 .section-2-image-1 p{
     position:relative;
-    top:50%;
-    text-align:center;
-    font-weight:600;
-    font-size:1.5rem;
-    letter-spacing:.1rem;
-}
-.section-2-image-2{
-    width:13rem;
-    height:35vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.60),rgba(0, 0, 0, 0.70)) , url("images/palestine.png");
-    background-repeat:no-repeat;
-    background-size:100%;
-    background-position:center center;
-    background-color:#272b41;
-    border-radius:1rem;
-    border:10px solid #272b41;
+    bottom:8rem;
+    left:2.5rem;
+    font-weight:500;
+    z-index:10;
     position:relative;
-    right:5rem;
-    bottom:5rem;
-    z-index:4;
+    top:2rem;
+    left:6rem;
+}
+.section-2-image-2 img{
+    width:10rem;
+    border:.5rem solid #5e63797e;
+    filter:brightness(50%);
+    border-radius:.8rem;
+    position:relative;
+    left:5rem;
+    top:10rem;
+    z-index:2;
 }
 .section-2-image-2 p{
     position:relative;
-    text-align:center;
-    top:50%;
-    font-weight:600;
-    letter-spacing:.1rem;
+    top:3rem;
+    left:7.5rem;
+    font-weight:500;
+    z-index:10;
 }
-.section-2-image-3{
-    width:12rem;
-    height:36vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.60),rgba(0, 0, 0, 0.70)) , url("images/russia.png");
-    background-repeat:no-repeat;
-    background-size:100%;
-    background-position:center center;
-    background-color:#272b41;
-    border-radius:1rem;
-    border:10px solid #272b41;
+.section-2-image-3 img{
+    width:10rem;
+    border:.5rem solid #5e63797e;
+    filter:brightness(50%);
+    border-radius:.8rem;
     position:relative;
-    bottom:31rem;
-    left:1rem;
-    z-index:2;
+    right:10rem;
+    z-index:-1;
 }
 .section-2-image-3 p{
     position:relative;
-    text-align:center;
-    top:50%;
-    font-weight:600;
-    letter-spacing:.1rem;
+    bottom:10rem;
+    right:7rem;
+    font-weight:500;
 }
-/* section 2 end */
+/* section 2 end  */
 /* responsive design mobile approaches start  */
 @media screen and (max-width: 992px){
     .menu-list{
@@ -500,6 +490,17 @@ body{
     }
     .section-1-image-1{
         width:auto;
+    }
+    .section-2-container{
+        flex-direction:column;
+        gap:2rem;
+    }
+    .section-2-text-container{
+        width:90%;
+        margin:0rem auto;
+    }
+    .section-2-image-container{
+        margin:5rem auto;
     }
 }
 /* responsive design mobile approaches end */
