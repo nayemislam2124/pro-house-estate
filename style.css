@@ -575,6 +575,59 @@ body{
     width:10rem;
 }
 /* section 5 end  */
+/* hr  */
+.last-hr{
+    color:rgba(49, 49, 49, 0.763);
+}
+/* hr  */
+/* footer section start  */
+.footer-text-container{
+    max-width:950px;
+    display:flex;
+    margin:5rem auto;
+    justify-content:space-between;
+}
+.footer-text-1,.footer-text-2,.footer-text-3{
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+}
+.footer-text-1 h3{
+    font-weight:500;
+}
+.footer-text-1 p{
+    color:#545B79;
+    font-size:.8rem;
+    line-height:1.5rem;
+}
+.footer-text-1 h6{
+    color:#356DF6;
+    font-weight:500;
+    letter-spacing:.15rem;
+    cursor:pointer;
+}
+.footer-text-2 h6,.footer-text-3 h6{
+    color:#545B79;
+    font-weight:400;
+    font-size:.8rem;
+}
+.footer-text-2 ul li,.footer-text-3 ul li{
+    font-size:.8rem;
+    line-height:2rem;
+    color:rgba(255, 255, 255, 0.756);
+    cursor:pointer;
+}
+.copyright{
+    max-width:950px;
+    margin:2rem auto .5rem auto;
+    display:flex;
+    justify-content:space-between;
+}
+.copyright-one p,.copyright-two p{
+    color:#545B79;
+    font-size:.8rem;
+}
+/* footer section end */
 /* responsive design mobile approaches start  */
 @media screen and (max-width: 992px){
     .menu-list{
@@ -691,6 +744,20 @@ body{
     .section-5-text-container input{
         width:90%;
         margin:2rem auto;
+    }
+    .footer-text-container{
+        flex-direction:column;
+        margin:10rem auto 5rem auto;;
+        text-align:center;
+    }
+    .last-hr{
+        position:relative;
+        top:5rem;
+    }
+    .copyright{
+        flex-direction:column;
+        text-align:center;
+        line-height:1.5rem;
     }
 }
 /* responsive design mobile approaches end */
